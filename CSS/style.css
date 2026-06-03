@@ -1,0 +1,191 @@
+/* ==========================
+   Universal Selector
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   Body Styles
+========================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("images/bg.jpg");
+    background-color: #e8e8e8;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* ==========================
+   Header Styles
+========================== */
+#mainHeader {
+    background: linear-gradient(
+        to right,
+        #0066cc,
+        #00ccff
+    );
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ==========================
+   H2 Element Selector
+========================== */
+h2 {
+    color: #003366;
+    margin: 20px 0;
+}
+
+/* ==========================
+   Event Card Class Selector
+========================== */
+.eventCard {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    outline: 2px dashed gray;
+}
+
+/* ==========================
+   Grouping Selector
+========================== */
+h3, p {
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+/* ==========================
+   Typography
+========================== */
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    text-transform: none;
+}
+
+/* ==========================
+   Navigation
+========================== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background: #222;
+    padding: 15px;
+}
+
+nav li {
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+/* Link States */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+/* ==========================
+   CTA Button
+========================== */
+.cta-button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ==========================
+   Table Styling
+========================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+}
+
+th {
+    background: #0066cc;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #eeeeee;
+}
+
+/* ==========================
+   Form Styling
+========================== */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+input:focus {
+    outline: 3px solid orange;
+}
+
+/* ==========================
+   Multi Column Layout
+========================== */
+.news {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    margin-top: 20px;
+}
+
+/* ==========================
+   Hidden vs None
+========================== */
+.hiddenBox {
+    visibility: hidden;
+}
+
+.noneBox {
+    display: none;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+@media screen and (max-width:768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    body {
+        font-size: 14px;
+    }
+    img {
+        width: 90%;
+    }
+    .eventCard {
+        width: 95%;
+        margin: auto;
+    }
+}
